@@ -110,6 +110,7 @@ main .thumbnails{
 	display: inline-block;
 	text-align: center;
 	z-index: 1;
+	/*padding: 4px;*/  /* new */
 }
 
 main .thumbnails img{
@@ -127,7 +128,7 @@ main .thumbnails img{
 
 }
 
-.thumbnails:hover #b, .profile:hover #b{
+.thumbnails:hover #b{
 	display: inline-block;
 	z-index: 2; 
 	margin: auto;
@@ -138,10 +139,10 @@ main .thumbnails img{
 	pointer-events: none;
 }
 
-.profile:hover #b{
+/*.profile:hover #b{
 	position: fixed;
 	margin-left: 120px;
-}
+}*/
 
 main #contact{
 	margin-top: 390px;
@@ -209,4 +210,16 @@ video{
 main #contact p.email{
 	width: 1500px;
 }
+
+/* new */
+.thumbnails:hover #b, .thumbnails:hover #a{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+
+
+
+
 
